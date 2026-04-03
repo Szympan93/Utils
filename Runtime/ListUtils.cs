@@ -32,5 +32,8 @@ namespace FunFact.Utils
             list.RemoveAtSwapBack(index);
             return true;
         }
+        
+        public static int WarpInc(this int i, int count) => i < count-1 ? i+1 : 0;
+        public static int WarpDec(this int i, int count) => i > 1 ? i-1 : count-1;
     }
 }
